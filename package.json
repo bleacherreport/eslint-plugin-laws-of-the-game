@@ -1,26 +1,33 @@
 {
-  "name": "eslint-plugin-laws-of-the-game",
-  "version": "0.0.0",
+  "name": "@br/eslint-plugin-laws-of-the-game",
+  "version": "1.0.0-rc0",
   "description": "Disincentivizes some coding practices.",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "Alexander Quine",
+  "author": "Bleacher Report (http://bleacherreport.com)",
+  "contributors": [
+    "Alexander Quine <alxndr+npm@gmail.com>"
+  ],
+  "url": "https://github.com/bleacherreport/eslint-plugin-laws-of-the-game",
+  "bugs": "https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/issues",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "lint": "eslint lib/ tests/ && echo Linted JS successfully.",
+    "test": "mocha tests/ --recursive"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
-    "eslint": "~3.9.1",
-    "mocha": "^3.1.2"
+    "eslint": "3.18.0",
+    "eslint-plugin-babel": "4.1.1",
+    "mocha": "3.1.2"
   },
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "Apache-2.0"
 }
