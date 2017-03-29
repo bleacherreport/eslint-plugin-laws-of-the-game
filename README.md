@@ -1,9 +1,6 @@
 # eslint-plugin-laws-of-the-game
 [![CircleCI](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master.svg?style=svg)](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master)
 
-laws-of-the-game
-================
-
 This is a plugin full of ESLint rules.
 
 Some rules emphasize the use of functions and transformations, and discourage mutation and implicit state.
