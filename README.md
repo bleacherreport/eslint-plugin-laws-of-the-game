@@ -15,22 +15,22 @@ You'll first need to install [ESLint]:
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-laws-of-the-game`:
+Next, install `@br/eslint-plugin-laws-of-the-game`:
 
 ```
-$ npm install eslint-plugin-laws-of-the-game --save-dev
+$ npm install @br/eslint-plugin-laws-of-the-game --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-laws-of-the-game` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@br/eslint-plugin-laws-of-the-game` globally.
 
 ## Usage
 
-Add `laws-of-the-game` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@br/laws-of-the-game` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "laws-of-the-game"
+        "@br/laws-of-the-game"
     ]
 }
 ```
