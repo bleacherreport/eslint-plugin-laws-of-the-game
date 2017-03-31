@@ -10,6 +10,9 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 ### Fixed
 - messaging for `prefer-includes-over-indexof`
 
+### Added
+- option `exempt` for rule `alphabetize-properties`
+
 
 ## [1.0.2] (2017-03-29)
 
