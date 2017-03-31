@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 
 ### Fixed
 - messaging for `prefer-includes-over-indexof`
+- `alphabetize-properties` rule can be used with object spreads
 
 ### Added
 - option `exempt` for rule `alphabetize-properties`
