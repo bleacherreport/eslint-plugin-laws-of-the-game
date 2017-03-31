@@ -14,12 +14,15 @@ testHelper.tester.run("prefer-includes-over-indexof", rule, {
   ],
 
   invalid: [
-    "foo.indexOf(bar) >= 0",
-    "foo.indexOf(bar) > -1",
     "foo.indexOf(bar) === -1",
-    "foo.indexOf(bar) !== -1",
-    "[foo].indexOf(bar) === -1",
-    "[foo].indexOf(bar) !== -1"
-  ].map(testHelper.makeInvalidCase({message: /\.includes\(/}))
+    "[foo].indexOf(bar) == -1"
+  ].map(testHelper.makeInvalidCase({message: /!Array\.includes\(/})).concat(
+    [
+      "foo.indexOf(bar) >= 0",
+      "foo.indexOf(bar) > -1",
+      "foo.indexOf(bar) !== -1",
+      "[foo].indexOf(bar) !== -1"
+    ].map(testHelper.makeInvalidCase({message: /[^!]Array\.includes/}))
+  )
 
 });
