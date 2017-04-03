@@ -1,6 +1,6 @@
 {
   "name": "@br/eslint-plugin-laws-of-the-game",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Disincentivizes some coding practices.",
   "keywords": [
     "eslint",
@@ -11,7 +11,11 @@
   "contributors": [
     "Alexander Quine <alxndr+npm@gmail.com>"
   ],
-  "url": "https://github.com/bleacherreport/eslint-plugin-laws-of-the-game",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bleacherreport/eslint-plugin-laws-of-the-game.git"
+  },
+  "homepage": "https://www.npmjs.com/package/@br/eslint-plugin-laws-of-the-game",
   "bugs": "https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/issues",
   "main": "lib/index.js",
   "scripts": {

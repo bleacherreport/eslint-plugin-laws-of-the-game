@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog] and this project adheres to [Semantic Versioning].
 
 
+## [unreleased] (target: 2017-04-03)
+
+### Fixed
+- messaging for `prefer-includes-over-indexof`
+- `alphabetize-properties` rule can be used with object spreads
+
+### Added
+- option `exempt` for rule `alphabetize-properties`
+
+
 ## [1.0.2] (2017-03-29)
 
 The initial release! (v1.0.0 and 1.0.1 lost to the sands of ~~time~~ tooling...)
@@ -17,5 +27,6 @@ The initial release! (v1.0.0 and 1.0.1 lost to the sands of ~~time~~ tooling...)
 
 
 [1.0.2]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.0.2
+[unreleased]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/compare/1.0.2...develop
 [Keep a Changelog]: http://keepachangelog.com/
 [Semantic Versioning]: http://semver.org/
