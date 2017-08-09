@@ -10,10 +10,12 @@ testHelper.tester.run("no-property-access", rule, {
     "Promise.all([foo, bar])",
     "Promise.race([foo, bar])",
     "Promise.all.foo",
-    "Promise.all[foo]"
+    "Promise.all[foo]",
+    "Something.else[foo, bar]"
   ],
 
   invalid: [
+    "Intl.getCanonicalLocales[foo, bar]",
     "Promise.all[foo, bar]",
     "Promise.race[foo, bar]"
   ].map(testHelper.makeInvalidCase({message: /access the properties/}))
