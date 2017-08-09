@@ -51,6 +51,7 @@ Then configure the rules you want to use under the rules section.
 
 * [alphabetize-properties]: Encourages keeping an object's properties in alphabetical order if there are more than a given number of properties.
 * [no-assign-in-case-without-braces]: Discourages assigning a variable in a `case` statement, unless it is wrapped in braces creating new scope.
+* [no-property-access]: Discourages accessing the properties of things which you probably meant to call as a function.
 * [no-unauthorized-global-properties]: Discourages the use of nonstandard properties of the `global` object.
 * [no-use-entire-process-dot-env]: Discourages the use of [the `process.env` global value][Process-dot-env].
 * [prefer-includes-over-indexof]: Encourages the use of `Array.includes()` rather than comparing `Array.indexOf()` to `-1`.
@@ -59,6 +60,7 @@ Then configure the rules you want to use under the rules section.
 
 [alphabetize-properties]: ./lib/rules/alphabetize-properties.md
 [no-assign-in-case-without-braces]: ./lib/rules/no-assign-in-case-without-braces.md
+[no-property-access]: ./lib/rules/no-property-access.md
 [no-unauthorized-global-properties]: ./lib/rules/no-unauthorized-global-properties.md
 [no-use-entire-process-dot-env]: ./lib/rules/no-use-entire-process-dot-env.md
 [prefer-includes-over-indexof]: ./lib/rules/prefer-includes-over-indexof.md
