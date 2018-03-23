@@ -12,20 +12,21 @@ Some rules intend to warn you of [potential footguns][PillarsOfJS].
 You'll first need to install [ESLint]:
 
 ```
-$ npm i eslint --save-dev
+$ npm install --save-dev eslint
 ```
 
 Next, install `@br/eslint-plugin-laws-of-the-game`:
 
 ```
-$ npm install @br/eslint-plugin-laws-of-the-game --save-dev
+$ npm install --save-dev @br/eslint-plugin-laws-of-the-game
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@br/eslint-plugin-laws-of-the-game` globally.
 
+
 ## Usage
 
-Add `@br/laws-of-the-game` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `"@br/laws-of-the-game"` to the `plugins` section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
@@ -35,17 +36,27 @@ Add `@br/laws-of-the-game` to the plugins section of your `.eslintrc` configurat
 }
 ```
 
+It's Recommended that you use the Recommended set of rules (which is all of them), by adding to the `extends` section:
 
-Then configure the rules you want to use under the rules section.
+```json
+{
+    "extends": [
+        "plugin:@br/laws-of-the-game/recommended",
+    ]
+}
+```
+
+Then configure any rules you'd like to tweak under the `rules` section:
 
 ```json
 {
     "rules": {
-        "laws-of-the-game/alphabetize-properties": [2, {"limit": 3}],
-        "laws-of-the-game/no-assign-process-dot-env": 2
+        "@br/laws-of-the-game/alphabetize-properties": [2, {"limit": 3}],
+        "@br/laws-of-the-game/no-assign-in-case-without-braces": 1
     }
 }
 ```
+
 
 ## Supported Rules
 
