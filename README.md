@@ -41,8 +41,8 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "laws-of-the-game/alphabetize-properties": [2, {"limit": 3}],
-        "laws-of-the-game/no-assign-process-dot-env": 2
+        "@br/laws-of-the-game/alphabetize-properties": [2, {"limit": 3}],
+        "@br/laws-of-the-game/no-assign-in-case-without-braces": 1
     }
 }
 ```
