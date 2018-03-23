@@ -35,6 +35,15 @@ Add `@br/laws-of-the-game` to the plugins section of your `.eslintrc` configurat
 }
 ```
 
+It's Recommended that you use the Recommended set of rules (which is all of them), by adding to the `extends` section:
+
+```json
+{
+    "extends": [
+        "plugin:@br/laws-of-the-game/recommended",
+    ]
+}
+```
 
 Then configure the rules you want to use under the rules section.
 
