@@ -60,6 +60,7 @@ Then configure any rules you'd like to tweak under the `rules` section:
 
 ## Supported Rules
 
+* [alphabetize-jsx-props]: Encourages keeping a JSX element's props in alphabetical order.
 * [alphabetize-properties]: Encourages keeping an object's properties in alphabetical order if there are more than a given number of properties.
 * [no-assign-in-case-without-braces]: Discourages assigning a variable in a `case` statement, unless it is wrapped in braces creating new scope.
 * [no-unauthorized-global-properties]: Discourages the use of nonstandard properties of the `global` object.
@@ -68,6 +69,7 @@ Then configure any rules you'd like to tweak under the `rules` section:
 
 
 
+[alphabetize-jsx-props]: ./alphabetize-jsx-props.md
 [alphabetize-properties]: ./lib/rules/alphabetize-properties.md
 [no-assign-in-case-without-braces]: ./lib/rules/no-assign-in-case-without-braces.md
 [no-unauthorized-global-properties]: ./lib/rules/no-unauthorized-global-properties.md
