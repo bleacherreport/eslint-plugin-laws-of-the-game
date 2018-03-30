@@ -36,3 +36,11 @@ obj = {}
 obj = {z:z, a:a}
 obj = {a:a, b:b, c:c, d:d, z:z, mixins: [foo]}
 ```
+
+
+## Related Rules
+
+* [alphabetize-jsx-props] is similar but for JSX props
+
+
+[alphabetize-jsx-props]: ./alphabetize-jsx-props.md

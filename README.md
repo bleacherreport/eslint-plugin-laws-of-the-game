@@ -61,7 +61,7 @@ Then configure any rules you'd like to tweak under the `rules` section:
 ## Supported Rules
 
 * [alphabetize-jsx-props]: Encourages keeping a JSX element's props in alphabetical order.
-* [alphabetize-properties]: Encourages keeping an object's properties in alphabetical order if there are more than a given number of properties.
+* [alphabetize-properties]: Encourages keeping an object's properties in alphabetical order.
 * [no-assign-in-case-without-braces]: Discourages assigning a variable in a `case` statement, unless it is wrapped in braces creating new scope.
 * [no-unauthorized-global-properties]: Discourages the use of nonstandard properties of the `global` object.
 * [no-use-entire-process-dot-env]: Discourages the use of [the `process.env` global value][Process-dot-env].
