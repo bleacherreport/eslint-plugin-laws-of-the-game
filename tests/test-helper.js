@@ -29,6 +29,7 @@ RuleTester.setDefaultConfig({
 });
 
 module.exports = {
+  RuleTester: require("eslint").RuleTester,
   makeInvalidCase: makeInvalidCase,
   tester: new RuleTester()
 };
