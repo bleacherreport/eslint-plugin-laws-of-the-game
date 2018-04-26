@@ -72,8 +72,17 @@ Then configure any rules you'd like to tweak under the `rules` section:
 * [prefer-includes-over-indexof]: Encourages the use of `Array.includes()` rather than comparing `Array.indexOf()` to `-1`.
 
 
+## Contributions
+
+We welcome contributions!
+There are a few ideas in the Issues of this repo.
+We use a form of [git-flow]; please create any Pull Requests based on the `develop` branch.
+Please add tests.
+
+
 
 [alphabetize-properties]: ./lib/rules/alphabetize-properties.md
+[git-flow]: http://nvie.com/posts/a-successful-git-branching-model/
 [no-assign-in-case-without-braces]: ./lib/rules/no-assign-in-case-without-braces.md
 [no-unauthorized-global-properties]: ./lib/rules/no-unauthorized-global-properties.md
 [no-use-entire-process-dot-env]: ./lib/rules/no-use-entire-process-dot-env.md
