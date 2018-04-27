@@ -2,7 +2,12 @@
 [![CircleCI](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master.svg?style=svg)](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master)
 
 This is a plugin full of ESLint rules.
+It is intended to be a somewhat-opinionated set of standards to follow when contributing to Bleacher Report JavaScript/ES codebases.
 
+
+### Custom rules
+
+There are a handful of custom rules implemented in this repo.
 Some rules emphasize the use of functions and transformations, and discourage mutation and implicit state.
 Some rules intend to warn you of [potential footguns][PillarsOfJS].
 
@@ -36,7 +41,7 @@ Add `"@br/laws-of-the-game"` to the `plugins` section of your `.eslintrc` config
 }
 ```
 
-It's Recommended that you use the Recommended set of rules (which is all of them), by adding to the `extends` section:
+It's Recommended that you use the Recommended set of rules by adding to the `extends` section:
 
 ```json
 {
@@ -51,14 +56,14 @@ Then configure any rules you'd like to tweak under the `rules` section:
 ```json
 {
     "rules": {
-        "@br/laws-of-the-game/alphabetize-properties": [2, {"limit": 3}],
-        "@br/laws-of-the-game/no-assign-in-case-without-braces": 1
+        "@br/laws-of-the-game/alphabetize-properties": ["error", {"limit": 3}],
+        "@br/laws-of-the-game/no-assign-in-case-without-braces": "warn"
     }
 }
 ```
 
 
-## Supported Rules
+## Custom Rules
 
 * [alphabetize-properties]: Encourages keeping an object's properties in alphabetical order if there are more than a given number of properties.
 * [no-assign-in-case-without-braces]: Discourages assigning a variable in a `case` statement, unless it is wrapped in braces creating new scope.
@@ -67,8 +72,17 @@ Then configure any rules you'd like to tweak under the `rules` section:
 * [prefer-includes-over-indexof]: Encourages the use of `Array.includes()` rather than comparing `Array.indexOf()` to `-1`.
 
 
+## Contributions
+
+We welcome contributions!
+There are a few ideas in the Issues of this repo.
+We use a form of [git-flow]; please create any Pull Requests based on the `develop` branch.
+Please add tests.
+
+
 
 [alphabetize-properties]: ./lib/rules/alphabetize-properties.md
+[git-flow]: http://nvie.com/posts/a-successful-git-branching-model/
 [no-assign-in-case-without-braces]: ./lib/rules/no-assign-in-case-without-braces.md
 [no-unauthorized-global-properties]: ./lib/rules/no-unauthorized-global-properties.md
 [no-use-entire-process-dot-env]: ./lib/rules/no-use-entire-process-dot-env.md
