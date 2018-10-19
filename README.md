@@ -84,6 +84,11 @@ We use a form of [git-flow]; please create any Pull Requests based on the `devel
 Please add tests!
 
 
+## Release Process
+
+Please use `npm publish` to release new versions of this package. This codebase attempts to follow [Semantic Versioning].
+
+
 
 [alphabetize-properties]: ./lib/rules/alphabetize-properties.md
 [git-flow]: http://nvie.com/posts/a-successful-git-branching-model/
@@ -96,3 +101,4 @@ Please add tests!
 [Issues]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/issues
 [PillarsOfJS]: https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3
 [Process-dot-env]: https://nodejs.org/api/process.html#process_process_env
+[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
