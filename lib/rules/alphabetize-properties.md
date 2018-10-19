@@ -6,6 +6,8 @@ The specific limit of "how many properties is too many" is configurable. It defa
 
 Individual properties can also be named as being exempt from the alphabetization rule. This is to address a situation where a specific key should always occur first or last in an object, while keeping the remaining properties alphabetized.
 
+This rule applies to object literals as well as named exports.
+
 
 ## Rule Details
 
@@ -14,11 +16,13 @@ The following patterns are considered warnings:
 ```js
 /* eslint alphabetize-properties */
 obj = {z:z, a:a, b:b, c:c, d:d}
+export {z:z, a:a, b:b, c:c, d:d}
 ```
 
 ```js
 /* eslint alphabetize-properties: [2, {limit: 2}] */
 obj = {z:z, a:a}
+export {z:z, a:a}
 ```
 
 The following patterns are not considered warnings:
@@ -28,6 +32,7 @@ The following patterns are not considered warnings:
 obj = {}
 obj = {z:z, a:a}
 obj = {a:a, b:b, c:c, d:d, z:z}
+export {a:a, b:b, c:c, d:d, z:z}
 ```
 
 ```js
@@ -35,4 +40,5 @@ obj = {a:a, b:b, c:c, d:d, z:z}
 obj = {}
 obj = {z:z, a:a}
 obj = {a:a, b:b, c:c, d:d, z:z, mixins: [foo]}
+export {a:a, b:b, c:c, d:d, z:z, mixins: [foo]}
 ```
