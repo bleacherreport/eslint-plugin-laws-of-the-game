@@ -75,9 +75,13 @@ Then configure any rules you'd like to tweak under the `rules` section:
 ## Contributions
 
 We welcome contributions!
-There are a few ideas in the Issues of this repo.
+There are a few ideas in the [Issues] of this repo.
+
+To get started with how to lint JavaScript, play around with the [AST Explorer].
+
 We use a form of [git-flow]; please create any Pull Requests based on the `develop` branch.
-Please add tests.
+
+Please add tests!
 
 
 
@@ -87,6 +91,8 @@ Please add tests.
 [no-unauthorized-global-properties]: ./lib/rules/no-unauthorized-global-properties.md
 [no-use-entire-process-dot-env]: ./lib/rules/no-use-entire-process-dot-env.md
 [prefer-includes-over-indexof]: ./lib/rules/prefer-includes-over-indexof.md
+[AST Explorer]: https://astexplorer.net/
 [ESLint]: http://eslint.org
+[Issues]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/issues
 [PillarsOfJS]: https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3
 [Process-dot-env]: https://nodejs.org/api/process.html#process_process_env
