@@ -14,13 +14,13 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 ## [1.3.0] (2018-04-27)
 
 ### Added
-- Many (non-custom) rules from ESLint, `eslint-plugin-babel`, and `eslint-plugin-react`.
+- Many (non-custom) rules from ESLint, `eslint-plugin-babel`, and `eslint-plugin-react` to the Recommended Ruleset.
 
 
 ## [1.2.0] (2018-03-23)
 
 ### Added
-- Recommended ruleset
+- Recommended Ruleset
 
 
 ## [1.1.1] (2017-06-01)
