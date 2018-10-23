@@ -86,7 +86,15 @@ Please add tests!
 
 ## Release Process
 
-Please use `npm publish` to release new versions of this package. This codebase attempts to follow [Semantic Versioning].
+This codebase attempts to follow [Semantic Versioning].
+
+1. One or more *approved* Pull Requests are merged to the `master` branch.
+2. Ensure the test suite passes, and runs the expected number of tests: `npm test`
+3. Choose the appropriate New Version Number according to [Semantic Versioning]. (The `CHANGELOG.md` file may help with identifying the nature of the changes.)
+4. Edit the `CHANGELOG.md` file, replacing the "Unreleased" label with the New Version Number, linked to the (as-yet-uncreated) GitHub tag as well (the pattern is `https://github.com/<user>/<repo>/releases/tag/<version-number>`). Ensure that the notes under this version reflect the changes made by the merged Pull Requests.
+5. Run `npm version <version-number> --message "Version %s"` to both update the version in the `package.json` file and create the tag on GitHub.
+6. Run `git push && npm publish` to push the merges & version to GitHub, and publish the new package on npmjs.com.
+
 
 
 
@@ -95,6 +103,7 @@ Please use `npm publish` to release new versions of this package. This codebase 
 [no-assign-in-case-without-braces]: ./lib/rules/no-assign-in-case-without-braces.md
 [no-unauthorized-global-properties]: ./lib/rules/no-unauthorized-global-properties.md
 [no-use-entire-process-dot-env]: ./lib/rules/no-use-entire-process-dot-env.md
+[npm version]: https://docs.npmjs.com/getting-started/publishing-npm-packages#how-to-update-a-package
 [prefer-includes-over-indexof]: ./lib/rules/prefer-includes-over-indexof.md
 [AST Explorer]: https://astexplorer.net/
 [ESLint]: http://eslint.org
