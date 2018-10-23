@@ -5,16 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog] and this project adheres to [Semantic Versioning].
 
 
+## [unreleased] (2018-10-23)
+
+### Changed
+- `alphabetize-properties` rule applies to `export` statement.
+
+
 ## [1.3.0] (2018-04-27)
 
 ### Added
-- Many (non-custom) rules from ESLint, `eslint-plugin-babel`, and `eslint-plugin-react` to the Recommended Ruleset.
+- Many (non-custom) rules from ESLint, `eslint-plugin-babel`, and `eslint-plugin-react`.
 
 
 ## [1.2.0] (2018-03-23)
 
 ### Added
-- Recommended Ruleset
+- Recommended ruleset
 
 
 ## [1.1.1] (2017-06-01)
