@@ -75,9 +75,26 @@ Then configure any rules you'd like to tweak under the `rules` section:
 ## Contributions
 
 We welcome contributions!
-There are a few ideas in the Issues of this repo.
+There are a few ideas in the [Issues] of this repo.
+
+To get started with how to lint JavaScript, play around with the [AST Explorer].
+
 We use a form of [git-flow]; please create any Pull Requests based on the `develop` branch.
-Please add tests.
+
+Please add tests!
+
+
+## Release Process
+
+This codebase attempts to follow [Semantic Versioning].
+
+1. One or more *approved* Pull Requests are merged to the `master` branch.
+1. Ensure the test suite passes, and runs the expected number of tests: `npm test`
+1. Choose the appropriate New Version Number according to [Semantic Versioning]. (The `CHANGELOG.md` file may help with identifying the nature of the changes.)
+1. Edit the `CHANGELOG.md` file, replacing the "Unreleased" label with the New Version Number, linked to the (as-yet-uncreated) GitHub tag as well (the pattern is `https://github.com/<user>/<repo>/releases/tag/<version-number>`). Ensure that the notes under this version reflect the changes made by the merged Pull Requests.
+1. Run `npm version <version-number> --message "Version %s"` to both update the version in the `package.json` file and create the tag on GitHub.
+1. Run `git push && npm publish` to push the merges & version to GitHub, and publish the new package on npmjs.com.
+
 
 
 
@@ -86,7 +103,11 @@ Please add tests.
 [no-assign-in-case-without-braces]: ./lib/rules/no-assign-in-case-without-braces.md
 [no-unauthorized-global-properties]: ./lib/rules/no-unauthorized-global-properties.md
 [no-use-entire-process-dot-env]: ./lib/rules/no-use-entire-process-dot-env.md
+[npm version]: https://docs.npmjs.com/getting-started/publishing-npm-packages#how-to-update-a-package
 [prefer-includes-over-indexof]: ./lib/rules/prefer-includes-over-indexof.md
+[AST Explorer]: https://astexplorer.net/
 [ESLint]: http://eslint.org
+[Issues]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/issues
 [PillarsOfJS]: https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3
 [Process-dot-env]: https://nodejs.org/api/process.html#process_process_env
+[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
