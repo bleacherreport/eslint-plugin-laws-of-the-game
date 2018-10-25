@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog] and this project adheres to [Semantic Versioning].
 
 
-## [unreleased] (2018-10-23)
+## unreleased (2018-10-23)
 
 ### Changed
 - `alphabetize-properties` rule applies to `export` statement.
