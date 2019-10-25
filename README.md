@@ -1,5 +1,6 @@
 # eslint-plugin-laws-of-the-game
-[![CircleCI](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master.svg?style=svg)](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/bleacherreport/eslint-plugin-laws-of-the-game.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master.svg?style=svg)](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/bleacherreport/eslint-plugin-laws-of-the-game.svg)](https://greenkeeper.io/)
 
 This is a plugin full of ESLint rules.
 It is intended to be a somewhat-opinionated set of standards to follow when contributing to Bleacher Report JavaScript/ES codebases.
