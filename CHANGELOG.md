@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 
 ### Fixed
 - Updated integration between CircleCI and GitHub; now using CircleCI 2.0.
+- Test suite runs on ESLint v5 and v6.
 
 
 ## [1.4.0] (2018-10-25)
