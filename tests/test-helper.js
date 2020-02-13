@@ -20,10 +20,7 @@ function makeInvalidCase(messageMatcher) {
 var RuleTester = require("eslint").RuleTester;
 RuleTester.setDefaultConfig({
   parserOptions: {
-    ecmaVersion: 8,
-    ecmaFeatures: {
-      experimentalObjectRestSpread: "true"
-    },
+    ecmaVersion: 2018,
     sourceType: "module"
   }
 });
