@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog] and this project adheres to [Semantic Versioning].
 
 
-## unreleased
+## [1.4.1] (2020-02-13)
 
 ### Added
 - Integration with [Greenkeeper.io]
@@ -66,6 +66,7 @@ The initial release! (v1.0.0 and 1.0.1 lost to the sands of ~~time~~ tooling...)
 [1.2.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.2.0
 [1.3.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.3.0
 [1.4.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.4.0
+[1.4.1]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.4.1
 [Greenkeeper.io]: https://greenkeeper.io
 [Keep a Changelog]: http://keepachangelog.com/
 [Semantic Versioning]: http://semver.org/
