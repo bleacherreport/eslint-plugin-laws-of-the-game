@@ -80,8 +80,6 @@ There are a few ideas in the [Issues] of this repo.
 
 To get started with how to lint JavaScript, play around with the [AST Explorer].
 
-We use a form of [git-flow]; please create any Pull Requests based on the `develop` branch.
-
 Please add tests!
 
 
