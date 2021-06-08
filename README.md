@@ -1,6 +1,5 @@
 # eslint-plugin-laws-of-the-game
-[![CircleCI](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master.svg?style=svg)](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/bleacherreport/eslint-plugin-laws-of-the-game.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/trunk.svg?style=svg)](https://circleci.com/gh/bleacherreport/eslint-plugin-laws-of-the-game/tree/trunk)
 
 This is a plugin full of ESLint rules.
 It is intended to be a somewhat-opinionated set of standards to follow when contributing to Bleacher Report JavaScript/ES codebases.
@@ -82,12 +81,14 @@ To get started with how to lint JavaScript, play around with the [AST Explorer].
 
 Please add tests!
 
+Note that the default branch of this repo is `trunk`.
+
 
 ## Release Process
 
 This codebase attempts to follow [Semantic Versioning].
 
-1. **Merge.** One or more *approved* Pull Requests are merged to the `master` branch.
+1. **Merge.** One or more *approved* Pull Requests are merged to the `trunk` branch.
 1. **Test.** Ensure the test suite passes, and runs the expected number of tests: `npm test`
 1. **Measure.** Choose the appropriate New Version Number according to [Semantic Versioning]. (The `CHANGELOG.md` file may help with identifying the nature of the changes.)
 1. **Changelog.** Edit the `CHANGELOG.md` file, replacing the "Unreleased" label with the New Version Number, linked to the (as-yet-uncreated) GitHub tag as well (the pattern is `https://github.com/<user>/<repo>/releases/tag/<version-number>`). Ensure that the notes under this version reflect the changes made by the merged Pull Requests. Commit and push.
