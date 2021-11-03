@@ -1,6 +1,6 @@
 {
   "name": "@br/eslint-plugin-laws-of-the-game",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Disincentivizes some coding practices.",
   "keywords": [
     "eslint",
