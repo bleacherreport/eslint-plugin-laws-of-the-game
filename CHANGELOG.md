@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 ## unreleased
 
 ### Updated
+- newer versions of `eslint` and other dependencies
 - security updates to dependencies
 - default branch renamed to `trunk`
 
