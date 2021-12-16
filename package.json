@@ -19,20 +19,22 @@
   "bugs": "https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/issues",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint lib/ tests/ && echo Linted JS successfully.",
-    "test": "mocha tests/ --recursive"
+    "lint": "eslint lib/ tests/",
+    "postlint": "echo Linted JS successfully",
+    "test": "mocha tests/ --recursive",
+    "posttest": "echo JS unit test suite passed successfully"
   },
   "dependencies": {
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-react": "^7.26.1",
-    "requireindex": "^1.2.0"
+    "eslint-plugin-babel": ">=5.3.1",
+    "eslint-plugin-react": ">=7.26.1",
+    "requireindex": ">=1.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "mocha": "^6.2.2"
+    "eslint": ">=7.32.0",
+    "mocha": ">=6.2.2"
   },
   "peerDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": ">=7.32.0"
   },
   "engines": {
     "node": ">=0.10.0"

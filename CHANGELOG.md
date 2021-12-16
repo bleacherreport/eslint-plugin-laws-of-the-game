@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog] and this project adheres to [Semantic Versioning].
 
 
+## unreleased
+
+### Updated
+- wider peer dependency versions, should support ESLint v8
+
+
 ## [1.5.0] (2021-12-16)
 
 ### Added
