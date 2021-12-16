@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 
 ## [unreleased]
 
+### Added
+- New option `denied` for the `no-unauthorized-global-properties` rule
+
+### Updated
+- New version of `npm` used to generate package-lock file
+
 
 ## [1.4.3] (2021-11-03)
 
@@ -19,6 +25,8 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 ## 1.4.2 (2021-11-03)
 
 Deprecated / unpublished.
+
+The [Greenkeeper.io] integration was removed.
 
 
 ## [1.4.1] (2020-02-13)
