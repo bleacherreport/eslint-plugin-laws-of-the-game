@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog] and this project adheres to [Semantic Versioning].
 
 
+## [1.5.0] (2021-12-16)
+
+### Added
+- New option `denied` for the `no-unauthorized-global-properties` rule
+
+### Updated
+- New version of `npm` used to generate package-lock file
+
+
 ## [1.4.3] (2021-11-03)
 
 ### Updated
@@ -16,6 +25,8 @@ The format is based on [Keep a Changelog] and this project adheres to [Semantic 
 ## 1.4.2 (2021-11-03)
 
 Deprecated / unpublished.
+
+The [Greenkeeper.io] integration was removed.
 
 
 ## [1.4.1] (2020-02-13)
@@ -78,9 +89,10 @@ The initial release! (v1.0.0 and 1.0.1 lost to the sands of ~~time~~ tooling...)
 [1.1.1]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.1.1
 [1.2.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.2.0
 [1.3.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.3.0
-[1.4.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.4.0
-[1.4.1]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.4.1
-[1.4.3]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/1.4.3
+[1.4.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/v1.4.0
+[1.4.1]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/v1.4.1
+[1.4.3]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/v1.4.3
+[1.5.0]: https://github.com/bleacherreport/eslint-plugin-laws-of-the-game/releases/tag/v1.5.0
 [Greenkeeper.io]: https://greenkeeper.io
 [Keep a Changelog]: http://keepachangelog.com/
 [Semantic Versioning]: http://semver.org/

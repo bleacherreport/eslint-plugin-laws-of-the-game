@@ -20,11 +20,12 @@ testHelper.tester.run("no-unauthorized-global-properties", rule, {
     "global.setImmediate()",
     "global.foo",
     ["global.setImmediate()", [{preset: "browser"}]],
+    ["global.console", [{preset: "browser", denied: ["console"]}]],
     ["global.document", [{preset: "node"}]],
     ["global.addEventListener()", [{preset: "node"}]],
     ["global.foo", [{preset: "browser"}]],
     ["global.foo", [{preset: "both"}]],
     ["global.foo", [{permitted: ["bar"]}]]
-  ].map(testHelper.makeInvalidCase({message: /property/}))
+  ].map(testHelper.makeInvalidCase({message: /Not permitted .+ property .+ `global`/}))
 
 });
