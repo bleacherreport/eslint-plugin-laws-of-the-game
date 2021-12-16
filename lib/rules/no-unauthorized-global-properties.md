@@ -1,8 +1,8 @@
-# Disallow using properties on the `global` object unless they are known-good, or explicitly permitted
+# Disallow the use of arbitrary properties on the `global` object
 
 This rule checks for the use of properties on the `global` object which are unrecognized.
 
-It defaults to allowing the set of properties which are in the core JavaScript language. It can be configured to additionally allow all properties available in browser context, Node context, or both, and also allows specifying a custom list of properties to allow use of.
+It defaults to allowing the set of properties which are in the core JavaScript language. It can be configured to additionally allow all properties available in browser context, Node context, or both, and allows further customization.
 
 
 ## Rule Details
