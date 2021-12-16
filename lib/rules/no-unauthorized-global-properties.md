@@ -10,47 +10,47 @@ It defaults to allowing the set of properties which are in the core JavaScript l
 The following patterns are considered warnings:
 
 ```js
-/* eslint no-unauthorized-global-properties: 2 */
+/* eslint no-unauthorized-global-properties: "error" */
 global.document;
 global.setImmediate();
 global.foo;
 ```
 
 ```js
-/* eslint no-unauthorized-global-properties: [2, {preset: "browser"}] */
+/* eslint no-unauthorized-global-properties: ["error", {preset: "browser"}] */
 global.setImmediate();
 ```
 
 ```js
-/* eslint no-unauthorized-global-properties: [2, {preset: "node"}] */
+/* eslint no-unauthorized-global-properties: ["error", {preset: "node"}] */
 global.document;
 ```
 
 ```js
-/* eslint no-unauthorized-global-properties: [2, {preset: "both"}] */
+/* eslint no-unauthorized-global-properties: ["error", {preset: "both"}] */
 global.foo;
 ```
 
 ```js
-/* eslint no-unauthorized-global-properties: [2, {permitted: ["foo", "bar"]}] */
+/* eslint no-unauthorized-global-properties: ["error", {permitted: ["foo", "bar"]}] */
 global.document;
 ```
 
 The following patterns are not considered warnings:
 
 ```js
-/* eslint no-unauthorized-global-properties: [2, {preset: ["browser"]}] */
+/* eslint no-unauthorized-global-properties: ["error", {preset: ["browser"]}] */
 global.document;
 ```
 
 ```js
-/* eslint no-unauthorized-global-properties: [2, {preset: "both"}] */
+/* eslint no-unauthorized-global-properties: ["error", {preset: "both"}] */
 global.document;
 global.setImmediate();
 ```
 
 ```js
-/* eslint no-unauthorized-global-properties: [2, {permitted: ["foo", "bar"], preset: "both"}] */
+/* eslint no-unauthorized-global-properties: ["error", {permitted: ["foo", "bar"], preset: "both"}] */
 global.document;
 global.setImmediate();
 global.bar;
