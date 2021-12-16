@@ -2,7 +2,7 @@
 
 This rule checks for the use of properties on the `global` object which are unrecognized.
 
-It defaults to allowing the set of properties which are in the core JavaScript language. It can be configured to additionally allow all properties available in browser context, Node context, or both, and allows further customization.
+It defaults to allowing the set of properties which are in the core JavaScript language. It can be configured to additionally allow all properties available in browser context, Node context, or both, and allows further customization (via `permitted` / `denied` lists).
 
 
 ## Rule Details
@@ -14,6 +14,11 @@ The following patterns are considered warnings:
 global.document;
 global.setImmediate();
 global.foo;
+```
+
+```js
+/* eslint no-unauthorized-global-properties: ["error", {preset: "browser", denied: ["document"]}] */
+global.document;
 ```
 
 ```js
@@ -39,7 +44,7 @@ global.document;
 The following patterns are not considered warnings:
 
 ```js
-/* eslint no-unauthorized-global-properties: ["error", {preset: ["browser"]}] */
+/* eslint no-unauthorized-global-properties: ["error", {preset: "browser"}] */
 global.document;
 ```
 
