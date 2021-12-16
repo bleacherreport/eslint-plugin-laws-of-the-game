@@ -91,10 +91,12 @@ This codebase attempts to follow [Semantic Versioning].
 1. **Merge.** One or more *approved* Pull Requests are merged to the `trunk` branch.
 1. **Test.** Ensure the test suite passes, and runs the expected number of tests: `npm test`
 1. **Measure.** Choose the appropriate New Version Number according to [Semantic Versioning]. (The `CHANGELOG.md` file may help with identifying the nature of the changes.)
-1. **Changelog.** Edit the `CHANGELOG.md` file, replacing the "Unreleased" label with the New Version Number, linked to the (as-yet-uncreated) GitHub tag as well (the pattern is `https://github.com/<user>/<repo>/releases/tag/<version-number>`). Ensure that the notes under this version reflect the changes made by the merged Pull Requests. Commit and push.
+1. **Changelog.** Edit the `CHANGELOG.md` file, replacing the "Unreleased" label with the New Version Number, linked to the (as-yet-uncreated) GitHub tag as well (the pattern is `https://github.com/<user>/<repo>/releases/tag/v<version-number>` note the `v`). Ensure that the notes under this version reflect the changes made by the merged Pull Requests. Commit and push.
 1. **Version.** Run `npm version <version-number> --message "Version %s"` to both update the version in the `package.json` file and create the tag on GitHub.
 1. **Publish.** Run `git push && npm publish` to push the merges & version to GitHub, and publish the new package on npmjs.com.
 1. **Release.** Create a new Release on GitHub. Visit `https://github.com/<user>/<repo>/releases`, click the "Draft a new release" button. In the Tag field, enter "v<version-number>"; in the Title field, enter just the version number; in the Description, write a brief description of the changes in this version. Then click "Publish release".
+
+More on the general patterns of publishing packages: ["How to Publish an Updated Version of an npm Package"]
 
 
 
@@ -112,3 +114,4 @@ This codebase attempts to follow [Semantic Versioning].
 [PillarsOfJS]: https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3
 [Process-dot-env]: https://nodejs.org/api/process.html#process_process_env
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
+["How to Publish an Updated Version of an npm Package"]: https://cloudfour.com/thinks/how-to-publish-an-updated-version-of-an-npm-package/
