@@ -116,5 +116,5 @@ More on the general patterns of publishing packages: ["How to Publish an Updated
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 ["How to Publish an Updated Version of an npm Package"]: https://cloudfour.com/thinks/how-to-publish-an-updated-version-of-an-npm-package/
 
-    
-TEST CREDS: Yzx_AyBrQcoLidLmoJP2GMCXdltYD1mgILLBGr_Bh7SmifTp2aWkp95hbhP_hB2ilCod0QhJTuW
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
